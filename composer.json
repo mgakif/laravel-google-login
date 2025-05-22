@@ -1,0 +1,31 @@
+{
+  "name": "mgakif/laravel-google-login",
+  "description": "Laravel Google OAuth Login Package with user/admin role redirect for Filament",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mehmet Akif Garip",
+      "email": "youremail@example.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "laravel/framework": "^9.0|^10.0|^11.0|^12.0",
+    "laravel/socialite": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mgakif\\LaravelGoogleLogin\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mgakif\\LaravelGoogleLogin\\Providers\\GoogleLoginServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
